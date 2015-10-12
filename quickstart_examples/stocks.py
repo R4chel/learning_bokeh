@@ -20,4 +20,12 @@ p = figure(width=800, height = 350, x_axis_type="datetime")
 p.circle(aapl_dates, aapl, size=4, color='darkgery', alpha=0.2, legend='close')
 p.line(aapl_dates, aapl_avg, color='navy', legend='avg')
 
+p.title = "AAPL One-month Average"
+p.legend.orientation = "top_left"
+p.grid.grid_line_alpha = 0
+p.xaxis.axis_label = 'Date'
+p.yaxis.axis_label = 'Price'
+p.ygrid.band_fill_color = 'olive'
+p.ygrid.band_fill_alpha = 0.1
+
 show(p)
